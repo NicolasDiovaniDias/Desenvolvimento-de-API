@@ -8,7 +8,27 @@
 </head>
 <body>
     <script>
-        document.write("bom dia")
+        console.log("teste")
+        var person = {
+            firstName: "nicolas",
+            lastName: "dias",
+            age: 18,
+            conjuge: {nome : "antonia"},
+            formacoes: ['lasanha','arroz','carne'],
+            getInfo : function(){
+                return this.firstName + " - Idade: "+this.age
+            }
+        }
+        document.write(person.formacoes[1])
+        txt = "<hr>"
+        txt += person.getInfo() + "<br>Idade: "+ person.age
+        txt += "<br> Formações: " 
+        person.formacoes.forEach(form => {
+            txt += form + " - "
+        })
+        txt += "<br>Cônjuge: " + person.conjuge.nome
+        txt +=
+        document.write(txt)
     </script>
 </body>
 </html>
