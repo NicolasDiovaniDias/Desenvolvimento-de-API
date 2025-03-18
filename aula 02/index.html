@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="../jquery3.7.1.min.js"></script>
 </head>
 <body>
     <script>
@@ -15,6 +16,7 @@
             age: 18,
             conjuge: {nome : "antonia"},
             formacoes: ['lasanha','arroz','carne'],
+            filhos: ["paulo", "fabio", "thiago"],
             getInfo : function(){
                 return this.firstName + " - Idade: "+this.age
             }
@@ -27,7 +29,11 @@
             txt += form + " - "
         })
         txt += "<br>Cônjuge: " + person.conjuge.nome
-        txt +=
+        num = 1
+        person.filhos.forEach(filho => {
+            txt+= "<br> filho "+ num+": " + filho
+            num+=1
+        })
         document.write(txt)
     </script>
 </body>
