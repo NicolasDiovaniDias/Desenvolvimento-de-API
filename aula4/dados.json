@@ -1,0 +1,24 @@
+{
+    "modelo" : "Doblo",
+    "ano" : 2003,
+    "motor" : 1.3,
+    "cor" : "vermelho",
+    "cambioAutomatico" : false,
+    "placa" : null,
+    "combustivel" : ["Gasolina", "GNV"],
+    "proprietario" : {
+        "nome" : "nicolas",
+        "idade" : "11/08/2006",
+        "raca" : "branco"
+    } ,
+    "opcionais" : [
+        {
+            "nome" : "ar",
+            "marca" : "gela_mais"
+        },
+        {
+            "nome" : "Rastreador",
+            "marca" : "Rastreadoblo"
+        }
+    ]
+}
