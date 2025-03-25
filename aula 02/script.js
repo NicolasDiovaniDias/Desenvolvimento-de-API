@@ -3,6 +3,6 @@ $("#minha_div").hide()
     $("#botao").click(function(){
         $("#minha_div").toggle()
     })
-$("#botao").on("click","button", function(){
-    
+$("#botao").on("click", function(){
+var request = new XMLHttpRequest
 })
